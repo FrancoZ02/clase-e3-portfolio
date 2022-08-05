@@ -199,8 +199,8 @@ header button:hover{
 
 .head {
     background: var(--skin);
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 50px;
     position: relative;
     box-shadow: 0px 0px 5px 0px var(--black);
