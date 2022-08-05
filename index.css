@@ -595,6 +595,10 @@ header button:hover{
     #hero{
         height: 150vh;
     }
+
+    #about-me{
+        height: 120vh;
+    }
 }
 
 
