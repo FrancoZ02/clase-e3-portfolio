@@ -129,10 +129,10 @@ header button:hover{
     display: inline-block;
     width: 100%;
     outline: none;
-    padding: 16px 90px 16px 15px;
+    padding: 16px 120px 16px 15px;
     border: 2px solid #0088a9;
     border-radius: 30px;
-    color: #edf0f1;
+    color: black;
 }
 
 .input-container form input:last-child{
@@ -145,7 +145,7 @@ header button:hover{
     padding: 12px 30px;
     cursor: pointer;
     top: 6px;
-    right: -102px;
+    right: -135px;
     color: #edf0f1;
     transition: all 0.3s ease 0s;
 }
@@ -167,7 +167,7 @@ header button:hover{
     width: 30%;
     border-radius: 30px;
     border: 1px solid #edf0f1;
-    padding: 25px;
+    padding: 30px;
     transition: all 0.3s ease 0s;
 }
 
