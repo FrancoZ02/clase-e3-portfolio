@@ -609,6 +609,29 @@ header button:hover{
     }
 }
 
+@media (max-height: 800px){
+    header{
+        position: absolute;
+    }
+
+    #hero{
+        height: 140vh;
+    }
+}
+
+@media (max-height: 600px){
+    header a, li, button{
+        font-size: 1em;
+    }
+     header{
+        height: 50vh;
+     }
+
+     #hero{
+        height: 170vh;
+     }
+}
+
 @media (max-height: 500px){
     #hero{
         height: 180vh;
@@ -626,6 +649,12 @@ header button:hover{
 
     #about-me{
         height: 170vh;
+    }
+}
+
+@media (max-height: 300px){
+    #hero{
+        height: 200vh;
     }
 }
 
