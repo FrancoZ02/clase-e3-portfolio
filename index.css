@@ -588,8 +588,12 @@ header button:hover{
 }
 
 @media (max-width: 300px){
+    header a, li, button{
+        font-size: 1em;
+    }
+    
     #hero{
-        height: 140vh;
+        height: 150vh;
     }
 }
 
