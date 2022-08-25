@@ -16,6 +16,7 @@ html{
     --brain: #fc76a3;
     --tooth: #FFF998;
     --slime: #DAE21C;
+    --blue: #15a3c6;
   }
 
 li, a, button{
@@ -24,6 +25,7 @@ li, a, button{
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
+    list-style: none;
 }
 
 /*INICIO HEADER*/
@@ -57,12 +59,12 @@ header{
     padding: 0px 20px;
 }
 
-.nav-links li a{
+.item-nav a{
     transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover{
-    color: #0088a9;
+.item-nav a:hover{
+    color: var(--blue);
 }
 
 header button{
@@ -128,7 +130,7 @@ header button:hover{
 }
 
 .color-acento{
-    color: #0088a9;
+    color: var(--blue);
 }
 
 .input-container form{
@@ -171,7 +173,7 @@ header button:hover{
 /*SECTION ABOUT ME*/
 
 #about-me{
-    height: 75vh;
+    padding: 250px 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -185,6 +187,11 @@ header button:hover{
     border-radius: 30px;
     border: 1px solid #edf0f1;
     padding: 30px;
+    transition: all 0.5s ease;
+}
+
+.container-text:hover{
+  transform: scale(1.1);
 }
 
 .container-text p{
@@ -487,13 +494,182 @@ header button:hover{
 
   /* Final zombie c: */
 
+  #services{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #24252A;
+    padding: 150px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #services h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: var(--blue);
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+  }
+
+  .container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card button{
+    background-color: var(--blue);
+    padding: 12px;
+    margin-bottom: 0;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .card button:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 136, 169, 1);
+  }
+
+  #services .card{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    border: solid 1px white;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 40vh;
+    transition: all 0.5s ease;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
+
+  .card p{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .card h3{
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #15a3c6;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+  .card:first-child{
+    background-image: linear-gradient(
+      0deg,   
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  ) 
+  ,url(img/deisgner.svg);
+  }
+
+  .card:nth-child(2){
+    background-image: linear-gradient(
+      0deg,   
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  ) 
+  ,url(img/team.svg);
+  }
+
+  .card:last-child{
+    background-image: linear-gradient(
+      0deg,   
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ) 
+    ,url(img/done.svg);
+  }
+
+  #section-contact{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    background-color: #24252A;
+    padding: 150px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-contact .container{
+    width: 90%;
+  }
+
+  #section-contact h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: var(--blue);
+    border-bottom: 1px solid white;
+  }
+
+  .contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .list-redes{
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+
+  .redes{
+    width: 45%;
+  }
+
+  .contact-img{
+    width: 100%;
+    max-height: 500px;
+  }
+
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: #24252A;
+    border-top: 1px solid white;
+  }
+
+  #footer p{
+    color: #fff;
+    font-size: 1.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
   @media (max-width: 1366px){
     #about-me p{
         font-size: 1.5em;
     }
+
+    .container-cards{
+      flex-direction: column;
+    }
+
+    #services .card{
+      width: 50vw;
+    }
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 1024px){
     header{
         flex-direction: column;
     }
@@ -523,6 +699,10 @@ header button:hover{
         font-size: 1.5em;
         right: -180px;
         padding: 12px 25px;
+    }
+    
+    .container-cards{
+      flex-direction: column;
     }
   }
 
@@ -585,9 +765,16 @@ header button:hover{
         height: 150vh;
     }
     
+    .card h3{
+      font-size: 1.2em;
+    }
+
+    #services h2{
+      font-size: 1.8em;
+    }
 }
 
-@media (max-width: 300px){
+@media (max-width: 320px){
     header a, li, button{
         font-size: 1em;
     }
@@ -607,56 +794,25 @@ header button:hover{
     #about-me{
         height: 120vh;
     }
+
+
+
+    .card h3{
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    #services h2{
+      font-size: 1.2em;
+    }
+
+    #section-contact h2{
+      font-size: 1.2em;
+    }
+
 }
 
-@media (max-height: 800px){
-    header{
-        position: absolute;
-    }
 
-    #hero{
-        height: 140vh;
-    }
-}
-
-@media (max-height: 600px){
-    header a, li, button{
-        font-size: 1em;
-    }
-     header{
-        height: 50vh;
-     }
-
-     #hero{
-        height: 170vh;
-     }
-}
-
-@media (max-height: 500px){
-    #hero{
-        height: 180vh;
-    }
-
-    #about-me{
-        height: 150vh;
-    }
-}
-
-@media (max-height: 400px){
-    #hero{
-        height: 200vh;
-    }
-
-    #about-me{
-        height: 170vh;
-    }
-}
-
-@media (max-height: 300px){
-    #hero{
-        height: 200vh;
-    }
-}
 
 
 
